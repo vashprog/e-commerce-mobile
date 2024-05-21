@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMobile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Customised CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel cdn css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/ecommerce.jpeg" width="160" height="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  active" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</a>
+                    </li>
+
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div></div>
+
+
+    <div class="bg-main2">
+        <div class="bg-opacity">
+            
+        </div>
+    </div>
+
+    <h1 class="categoryShop">Shop By Category</h1>
+
+    <div class="owl-carousel  owl-theme">
+        
+        <div class="item">
+            <div class="card">
+                <div class="services-img">
+                    <img src="image/samsung.jpg" width="200px" height="250px" alt="">
+                </div>
+                <h4>Samsung</h4>
+                <a href="samsung.html" class="btn-style">View Program</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="services-img">
+                    <img src="image/apple.jpg" width="200px" height="250px" alt="">
+                </div>
+                <h4>Apple</h4>
+                <a href="apple.html" class="btn-style">View Program</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="services-img">
+                    <img src="image/nokia.jpg" width="200px" height="250px" alt="">
+                </div>
+                <h4>Nokia</h4>
+                <a href="nokia.html" class="btn-style">View Program</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card">
+                <div class="services-img">
+                    <img src="image/redmi.jpg" width="200px" height="250px" alt="">
+                </div>
+                <h4>Redmi</h4>
+                <a href="redmi.html" class="btn-style">View Program</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="services-section">
+        <h1>Latest Update</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="services-img">
+                        <img src="image/samsung m12.PNG" width="100%" height="100%" alt="">
+                    </div>
+                    <h4>Samsung Galaxy M12</h4>
+                    <h6>6GB RAM, 128GB STORAGE</h6>
+                    <h5>Rs 15,499</h5>
+                    <a href="#" class="btn-style" data-bs-toggle="modal" data-bs-target="#samsungm12">Buy now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="services-img">
+                        <img src="image/samsung a12.PNG" width="100%" height="100%" alt="">
+                    </div>
+                    <h4>Samsung Galaxy A13</h4>
+                    <h6>4GB RAM, 64GB STORAGE</h6>
+                    <h5>Rs 10,499</h5>
+                    <a href="#" class="btn-style" data-bs-toggle="modal" data-bs-target="#samsunga13">Buy now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="services-img">
+                        <img src="image/redmi 9 activ.PNG" width="100%" height="100%" alt="">
+                    </div>
+                    <h4>Redmi 9 Activ</h4>
+                    <h6>4GB RAM, 64GB Storage </h6>
+                    <h5>Rs 8,499</h5>
+                    <a href="#" class="btn-style" data-bs-toggle="modal" data-bs-target="#redmi9activ">Buy now</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+    <!--Sign up Modal -->
+    <div class="modal" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                    <button type="button" onclick="document.getElementById('staticBackdrop').style.display='none';"
+                        class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return validation()" name="signup-googlesheet" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputName" name="Full Name">
+                            <span id="errorname" style="font-size: 10px; color: red;"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail" name="Email Address">
+                            <span id="erroremail" style="font-size: 10px; color: red;"></span>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputNumber" class="form-label">Contact Number</label>
+                            <input type="text" class="form-control" id="exampleInputNumber" name="Contact Number">
+                            <span id="errornumber" style="font-size: 10px; color: red;"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+                            <span id="errorpassword" style="font-size: 10px; color: red;"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                            <span id="errorcpassword" style="font-size: 10px; color: red;"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="document.getElementById('staticBackdrop').style.display='none';"
+                        class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return validation0()">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail0" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail0">
+                            <span id="erroremail0" style="font-size: 10px; color: red;"></span>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword0" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword0">
+                            <span id="errorpassword0" style="font-size: 10px; color: red;"></span>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <br><br>
+                    <h6>New User <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="samsungm12" tabindex="-1">
+        <div class="modal-dialog billsize">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Billing Form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="billing.html" method="get">
+                    <div class="mb-3">
+                        <label for="billname1" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="billname1" value="Samsung Galaxy M12" readonly>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="billprice1" class="form-label">Product Price</label>
+                        <input type="text" class="form-control" id="billprice1" value="Rs 15,499" readonly>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="billdes1" class="form-label">Product Description</label>
+                        <input type="text" class="form-control" id="billdes1" value="6GB RAM, 128GB STORAGE" readonly>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit" onclick="samsungm12submit()">
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="samsunga13" tabindex="-1">
+        <div class="modal-dialog billsize">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Billing Form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form  method="get" action="billing.html">
+                    <div class="mb-3">
+                        <label for="billname2" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="billname2" value="Samsung Galaxy A13" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="billdes2" class="form-label">Product Description</label>
+                        <input type="text" class="form-control" id="billdes2" value="4GB RAM, 64GB STORAGE" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="billprice2" class="form-label">Product Price</label>
+                        <input type="text" class="form-control" id="billprice2" value="Rs 10,499" readonly>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit" onclick="samsunga13submit()">
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="redmi9activ" tabindex="-1">
+        <div class="modal-dialog billsize">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Billing Form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form  method="get" action="billing.html">
+                    <div class="mb-3">
+                        <label for="billname3" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="billname3" value="Redmi 9 Activ" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="billdes3" class="form-label">Product Description</label>
+                        <input type="text" class="form-control" id="billdes3" value="4GB RAM, 64GB STORAGE" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="billprice3" class="form-label">Product Price</label>
+                        <input type="text" class="form-control" id="billprice3" value="Rs 8,499" readonly>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit" onclick="redmi9activsubmit()">
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/coincent.ai/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/iitguwahati"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:support@coincent.ai"><i class="fab fa-google"></i></a>
+            <a href="https://wa.me/919886550360"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About Us</a>
+            </li>
+            <li>
+                <a href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Coincent @ 2022
+        </p>
+    </section>
+
+
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Datatable JS -->
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+    <!-- owl carousel cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            responsiveClass: true,
+            // rewind: true,
+            // nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav : true,
+                    loop: true
+                }
+            }
+        })
+    </script>
+
+    <script src="main.js"></script>
+
+    <!-- Google Sheet Connection -->
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyVHmQuHXA1YoZV0b81zORF9tvWFau1t-6gnXpvOQtMjfgTiMDzCig41iDzeWFtU8t6/exec'
+        const form = document.forms['signup-googlesheet']
+     
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Successfully Sign Up!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+     
+     </script>
+     
+
+</body>
+
+</html>
+
+
+
+
+

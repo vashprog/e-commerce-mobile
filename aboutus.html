@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMobile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Customised CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel cdn css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/ecommerce.jpeg" width="160" height="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  active" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="aboutuscls">
+        <h1>About Us</h1>
+        <pre>
+            ShopMobile is an online shopping platform enriched with extensively growing and reliable Technologies.
+
+            ShopMobile provides mobile of latest technology.We provide Mobiles with High Privacy and Security.
+            
+            Mobiles here are embedded with HD Camera, Large Storage, Updated Technologies. 
+
+            ShopMobile provides mobile with lowest costavailable in internet. We stand for the welfare of the consumers.
+                   
+            We intend to provide best products to all forms of costumers.We work every day to earn and keep customers’ trust.
+            
+            We do this through convenient services, and by creating programs for the thousands of small
+            
+            and medium businesses that add significantly to our product selection.We are able to delight and invent for customers
+            
+            thanks to our incredible workforce. People working at ShopMobile are customer-centric. 
+            
+            ShopMobile believes in a friendly environment with the consumers.ShopMobile also provides facilities for warranty.
+            
+            We in ShopMobile respects the privacy consumers. ShopMobile is guided by the principles: consumer interests,
+            
+            , commitment to operational excellence. 
+  
+        </pre>
+    </div>
+
+
+    <!--Sign Up Modal -->
+    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                    <button type="button" onclick="document.getElementById('staticBackdrop').style.display='none';"
+                        class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return validation()">
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputName">
+                            <span id="errorname" style="font-size: 10px; color: red;"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail">
+                            <span id="erroremail" style="font-size: 10px; color: red;"></span>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputNumber" class="form-label">Contact Number</label>
+                            <input type="text" class="form-control" id="exampleInputNumber">
+                            <span id="errornumber" style="font-size: 10px; color: red;"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <span id="errorpassword" style="font-size: 10px; color: red;"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                            <span id="errorcpassword" style="font-size: 10px; color: red;"></span>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="document.getElementById('staticBackdrop').style.display='none';"
+                        class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return validation0()">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail0" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail0">
+                            <span id="erroremail0" style="font-size: 10px; color: red;"></span>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword0" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword0">
+                            <span id="errorpassword0" style="font-size: 10px; color: red;"></span>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <br><br>
+                    <h6>New User <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/coincent.ai/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/iitguwahati"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:support@coincent.ai"><i class="fab fa-google"></i></a>
+            <a href="https://wa.me/919886550360"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About Us</a>
+            </li>
+            <li>
+                <a href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Coincent @ 2022
+        </p>
+    </section>
+
+
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Datatable JS -->
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+    <!-- owl carousel cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            responsiveClass: true,
+            // rewind: true,
+            // nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav : true,
+                    loop: true
+                }
+            }
+        })
+    </script>
+
+    <script src="main.js"></script>
+
+    <!-- Google Sheet Connection -->
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyVHmQuHXA1YoZV0b81zORF9tvWFau1t-6gnXpvOQtMjfgTiMDzCig41iDzeWFtU8t6/exec'
+        const form = document.forms['signup-googlesheet']
+     
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Successfully Sign Up!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+     
+    </script>
+     
+
+</body>
+
+</html>
+
+
+
+
+
